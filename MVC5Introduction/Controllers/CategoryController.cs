@@ -22,7 +22,9 @@ namespace MVC5Introduction.Controllers
                 new Category(){Id =2, Name= " Caterogy 2",Rating=4 },
                 new Category(){Id =3, Name= " Caterogy 3",Rating=5 },
                 new Category(){Id =4, Name= " Caterogy 4",Rating=3 },
-                new Category(){Id =5, Name= " Caterogy 5",Rating=5 }
+                new Category(){Id =5, Name= " Caterogy 5",Rating=5 },
+                new Category(){Id =6, Name= " Caterogy 6",Rating=4 }
+
 
             };
 
