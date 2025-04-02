@@ -1,0 +1,42 @@
+﻿
+@using MVC5Introduction.Models
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index1</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="container">
+    <div>
+        <p>
+            @Html.ActionLink("Create new category", "Create")
+            @Html.ActionLink("Create new category strongly type view", "CreateCategory")
+        </p>
+        <h1>Category Index1 View Content</h1>
+        <table class="table table-bordered table-striped"  >
+            <thead>
+                <tr>
+                    <th>Id</th><th>Name</th><th>Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(Category cat in Model)
+            {
+                <tr>
+                    <td>@cat.Id</td>
+                    <td>@cat.Name</td>
+                    <td>@cat.Rating</td>
+
+                </tr>
+            }
+            </tbody>
+        </table>
+
+    </div>
+    <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

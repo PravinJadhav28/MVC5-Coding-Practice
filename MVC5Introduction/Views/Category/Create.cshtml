@@ -1,0 +1,67 @@
+﻿@*@using MVC5Introduction.Utility*@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    <div>
+        <h1> Create Category</h1>
+        @*<table>
+            <tr?>
+                <td>Name</td>
+                <td>
+                    <input type="text" />
+                </td>
+            </tr?>
+            <tr>
+                <td>
+                    Rating
+                </td>
+                <td>
+                    <input type="text" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" value="Create" />
+                </td>
+            </tr>
+
+        </table>
+        <h2>using HTML helper Class</h2>
+        Textbox : @Html.TextBox("Name") <br />
+        password : @Html.Password("pwd")<br />
+        Radio Button : @Html.RadioButton("Nationality", false)Indian<br />
+        Check Box :@Html.CheckBox("Education") Graduated<br />
+        Textarea :@Html.TextArea("Address", new { cols = "50", rows = "5" }) <br />
+
+        <input type="button" value="normal button" />
+        <input type="submit" value="submit button" /> <br />
+
+        @Html.Button("button", "normal button")
+        @Html.Button("submit", "submit button")*@
+        <ul>
+            <li>Pravin</li>
+            <li>Namdev</li>
+            <li>Sachin</li>
+            <li>Akash</li>
+        </ul>
+        @{
+            List<string> names = new List<string>() { "Pravin", "Sachin", "Namdev", "Akash" };
+            <ul>
+            @foreach (string name in names)
+            {
+                <li>@name</li>
+            }
+            </ul>
+        }
+
+    </div>
+    <div>
+        @Html.ActionLink("back to list","Index1")
+    </div>
+</body>
+</html>
