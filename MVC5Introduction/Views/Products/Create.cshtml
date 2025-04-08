@@ -1,0 +1,40 @@
+﻿
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    <div> 
+        <h1>Products Create view</h1>
+        <form action='@Url.Action("Details", "Products", new {name= "Shirt",price=1599})'>
+            <input type="hidden" value="45" name="productId" /> <br />
+            <input type="submit" value="Send data"/><br />
+            @Html.ActionLink("Detail page","Details","Products",
+            new {productId=18, name = "Shirt", price = 1599 },null)
+        </form>
+
+        <form method="post">
+
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="name" /></td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td><input type="text" name="price" /></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Create Product" /></td>
+                </tr>
+            </table>
+
+        </form>
+       
+    </div>
+</body>
+</html>

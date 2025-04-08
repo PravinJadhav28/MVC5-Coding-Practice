@@ -17,7 +17,7 @@ namespace MVC5Introduction
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Category", action = "Index1", id = UrlParameter.Optional }
+                defaults: new { controller = "Products", action = "Create", id = UrlParameter.Optional }
             );
 
             //routes.MapRoute(
